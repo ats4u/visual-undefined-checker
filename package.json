@@ -1,0 +1,14 @@
+{
+  "name": "visual-undefined-checker",
+  "version": "0.1.0",
+  "description": "A module which throws an error when it refers to a property that doesn't exist at runtime.",
+  "main": "woofies.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest woofies.test.js"
+  },
+  "author": "Atsushi Oka ( https://github.com/ats4u )",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
