@@ -45,6 +45,13 @@ function createHandler(state) {
        *  (Fri, 22 Jul 2022 14:55:51 +0900)
        */
       return Reflect.get(...args);
+      
+    } else if ( p === 'toPostgres' ) {
+      /**
+       * node-postgres's `json` always retrieves 'toPostgres' field never check
+       * its existence beforehand; ignore toPostgres() .
+       */
+      return Reflect.get(...args);
     } else if ( p === 'then' ) {
       /*
        * `await` always retrieves 'then' field never check its existence beforehand.
