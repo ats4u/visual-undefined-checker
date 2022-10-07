@@ -1,6 +1,6 @@
 {
   "name": "visual-undefined-checker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A module which throws an error when it refers to a property that doesn't exist at runtime.",
   "main": "woofies.js",
   "scripts": {
